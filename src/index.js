@@ -1,3 +1,6 @@
-import './test.css';
+import  Tooltip from './elBytes-ui/tooltip'
 
-console.log('testing');
+//create a new tooltip 
+const tooltip = new Tooltip(document.querySelector('.tooltip'));
+
+tooltip.init();
