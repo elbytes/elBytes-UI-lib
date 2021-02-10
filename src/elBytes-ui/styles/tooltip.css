@@ -1,15 +1,15 @@
 .tooltip{
     position: relative;
     display: inline-block;
-    color: #ff6565;
+    color: #fffb00;
     border-bottom: 1px dotted #ff6565;
     cursor: help;
   }
   .tip{
     visibility: hidden;
     width: 250px;
-    background-color: #ff6565;
-    color: #fff;
+    background-color: #fcd9d9;
+    color: rgb(53, 13, 13);
     text-align: center;
     border-radius: 10px;
     padding: 5px 0;

@@ -5,13 +5,77 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>elBytes UI Library</title>
   <style>
-    body{font-size: 2em;}
+    body{
+      max-width: 1080px;
+      margin: 20px auto;
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+      font-family: 'Roboto', sans-serif;
+      font-size: 2em;
+      color: bisque;
+    background-color: #FF6666;}
     .container{margin: 40px; margin-top: 80px;}
+    button{
+      width: 300px;
+      background: #1E354C;
+      padding: 10px;
+      margin: 20px auto;
+      border: none;
+      border-radius: 4px;
+      font-size: 0.7em;
+      cursor: pointer;
+      display: block;
+      color: bisque;
+    }
   </style>
 </head>
 <body>
   <div class="container">
+    <hr>
+     <!--tooltip-->
+    <h3>ToolTip</h3>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span class="tooltip" data-message="This is a tooltip!">Deleniti modi</span> nihil ipsum dolorum perspiciatis placeat eos veritatis eum a provident vel, itaque iure nisi, aspernatur iste. Ipsum error ducimus unde.</p>
+    <hr>
+     <!--dropdown-->
+    <h3>DropDown</h3>
+    <div class="dropdown">
+      <div class="trigger">Options
+      </div>
+      <div class="content"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit molestias accusamus quos vel? Inventore facere ducimus harum qui omnis ratione, numquam cumque iure animi unde maiores, necessitatibus sint nam error.</p>
+      </div>
+    </div>
+    <div class="dropdown">
+      <div class="trigger">Options
+      </div>
+      <div class="content"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit molestias accusamus quos vel? Inventore facere ducimus harum qui omnis ratione, numquam cumque iure animi unde maiores, necessitatibus sint nam error.</p>
+      </div>
+    </div>
+    <hr>
+    <!--tabbed content-->
+    <h3>Tabbed Information</h3>
+    <div class="tabs">
+      <ul>
+        <li class="trigger active" data-target="#tab-one">Tab One</li>
+        <li class="trigger" data-target="#tab-two">Tab Two</li>
+        <li class="trigger" data-target="#tab-three">Tab Three</li>
+      </ul>
+      <div id="tab-one" class="content active">
+        <h4>Tabbed Content One</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatum odio, tenetur vero, vitae quis, sunt corporis hic id soluta assumenda. Saepe cumque quia ratione, quo error voluptates ipsam rem?</p>
+      </div>
+      <div id="tab-two" class="content">
+        <h4>Tabbed Content Two</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, in! Facilis quos eligendi omnis delectus molestias consequatur voluptatibus provident! Deleniti aliquam illum consectetur cupiditate! Necessitatibus incidunt sint vel harum perspiciatis!</p>
+      </div>
+      <div id="tab-three" class="content">
+        <h4>Tabbed Content Three</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, in! Facilis quos eligendi omnis delectus molestias consequatur voluptatibus provident! Deleniti aliquam illum consectetur cupiditate! Necessitatibus incidunt sint vel harum perspiciatis!</p>
+      </div>
+    </div>
+    <hr>
+    <h3>Notification</h3>
+    <div>
+     <button class="notification-trigger">Click For Notification</button>
+    </div>
   </div>
   <script src="assets/bundle.js"></script>
 </body>
